@@ -1,0 +1,40 @@
+---
+title: "Desafio_01"
+author: "Amanda Cedro"
+format: html
+editor: visual
+---
+
+```{r}
+library(reticulate)
+virtualenv_create("ambiente")
+```
+
+```{r}
+use_virtualenv("ambiente")
+py_install("pandas", envname = "ambiente")
+```
+
+```{r}
+start <- Sys.time()
+flights <- read.csv(unz('dados/flights.csv.zip', 'flights.csv'))
+end <- Sys.time()
+end - start
+```
+
+```{r}
+library(readr)
+start <- Sys.time()
+flights <- read_csv('dados/flights.csv.zip')
+end <- Sys.time()
+end - start
+```
+
+```{python}
+import time
+import pandas as pd
+start = time.time()
+flights = pd.read_csv("dados/flights.csv.zip", compression="zip", header=0, sep=",", low_memory=False)
+end = time.time()
+end - start
+```
