@@ -3,41 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Site no GitHub Pages</title>
+    <title>Meu Portfólio - GitHub Pages</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
         body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f4f4f4;
+        }
+        
+        .header {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
+            padding: 80px 0;
             text-align: center;
         }
+        
         .container {
-            background: rgba(255,255,255,0.1);
-            padding: 40px;
-            border-radius: 15px;
-            backdrop-filter: blur(10px);
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
+        
         h1 {
-            font-size: 2.5em;
+            font-size: 3em;
             margin-bottom: 20px;
         }
-        .emoji {
-            font-size: 4em;
-            margin: 20px 0;
+        
+        .btn {
+            display: inline-block;
+            background: #fff;
+            color: #667eea;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            margin-top: 20px;
+            font-weight: bold;
+            transition: transform 0.3s;
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 80px 0;
+        }
+        
+        .feature-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .feature-card h3 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            color: #667eea;
+        }
+        
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 50px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="emoji">🎉</div>
-        <h1>Site Publicado com Sucesso!</h1>
-        <p>Seu GitHub Pages está funcionando perfeitamente!</p>
-        <p>✅ Domínio personalizado configurado</p>
-        <p>🚀 Hospedagem gratuita ativa</p>
-        <p>🔒 HTTPS seguro habilitado</p>
-    </div>
+    <header class="header">
+        <div class="container">
+            <h1>🚀 Meu Site Profissional</h1>
+            <p>Hospedado gratuitamente no GitHub Pages</p>
+            <a href="#features" class="btn">Saiba Mais</a>
+        </div>
+    </header>
+
+    <section class="features" id="features">
+        <div class="container">
+            <div class="feature-card">
+                <h3>⚡ Velocidade</h3>
+                <p>Hospedagem de alta performance com entrega rápida</p>
+            </div>
+            <div class="feature-card">
+                <h3>🔒 Segurança</h3>
+                <p>HTTPS automático e proteção integrada</p>
+            </div>
+            <div class="feature-card">
+                <h3>💫 Moderno</h3>
+                <p>Design responsivo para todos os dispositivos</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>
+            <p>GitHub Pages + Domínio Personalizado</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript simples para interatividade
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Site carregado com sucesso!');
+            
+            // Efeito suave nos cards
+            const cards = document.querySelectorAll('.feature-card');
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', () => {
+                    card.style.transform = 'translateY(-10px)';
+                });
+                card.addEventListener('mouseleave', () => {
+                    card.style.transform = 'translateY(0)';
+                });
+            });
+        });
+    </script>
 </body>
 </html>
