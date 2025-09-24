@@ -4,28 +4,69 @@
   <meta charset="UTF-8">
   <title>Índice do Site</title>
   <style>
+    /* Importando uma fonte bonita do Google Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Poppins', sans-serif;
       margin: 40px;
+      background-color: #ffcff9;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      animation: fadeIn 1s ease-in-out;
     }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #6a0572;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
     ul {
       list-style-type: none;
+      padding: 0;
     }
+
     li {
-      margin: 10px 0;
+      margin: 15px 0;
     }
+
     a {
       text-decoration: none;
-      color: blue;
+      color: #6a0572;
+      font-size: 1.2rem;
+      font-weight: 500;
+      padding: 10px 20px;
+      border-radius: 12px;
+      background: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+      display: inline-block;
     }
+
     a:hover {
-      text-decoration: underline;
+      background-color: #6a0572;
+      color: #fff;
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
 <body>
   <h1>DESAFIOS:</h1>
-  <p>Amanda Rehder Cedro | RA: 253507</p>
+  <p><strong>Amanda Rehder Cedro</strong> | RA: 253507</p>
   <ul>
     <li><a href="Desafio_01.html">Desafio 1</a></li>
     <li><a href="Desafio_02.html">Desafio 2</a></li>
