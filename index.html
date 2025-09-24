@@ -26,36 +26,44 @@
     p {
       font-size: 1rem;
       color: #333;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
     }
 
     ul {
       list-style-type: none;
       padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px; /* espaço entre os botões */
+      max-width: 900px;
+      width: 100%;
     }
 
     li {
-      margin: 15px 0;
+      display: flex;
+      justify-content: center;
     }
 
     a {
       text-decoration: none;
       color: #6a0572;
-      font-size: 1.2rem;
-      font-weight: 500;
-      padding: 10px 20px;
-      border-radius: 12px;
+      font-size: 1.6rem; /* texto maior */
+      font-weight: 600;
+      padding: 25px 40px; /* bem maior */
+      border-radius: 20px;
       background: #fff;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
       transition: all 0.3s ease;
       display: inline-block;
+      text-align: center;
+      width: 100%;
     }
 
     a:hover {
       background-color: #6a0572;
       color: #fff;
-      transform: scale(1.05);
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      transform: scale(1.08);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     }
 
     @keyframes fadeIn {
