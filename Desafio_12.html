@@ -3156,7 +3156,7 @@ vertical-align: -.125em;
 <span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="st">)</span></span>
 <span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="st">&#39;&#39;&#39;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>&lt;sqlite3.Cursor object at 0x00000289829E29C0&gt;</code></pre>
+<pre><code>&lt;sqlite3.Cursor object at 0x0000023BD9CE29C0&gt;</code></pre>
 </div>
 </div>
 </section>
@@ -3176,7 +3176,7 @@ vertical-align: -.125em;
 <span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="st">    (&#39;Carlos&#39;, &#39;Produto C&#39;, 100.0, &#39;2024-10-05&#39;);</span></span>
 <span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="st">&#39;&#39;&#39;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>&lt;sqlite3.Cursor object at 0x00000289829E29C0&gt;</code></pre>
+<pre><code>&lt;sqlite3.Cursor object at 0x0000023BD9CE29C0&gt;</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>conn.commit()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
@@ -3186,7 +3186,7 @@ vertical-align: -.125em;
 <div class="cell">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>cursor.execute(<span class="st">&quot;SELECT * FROM vendas&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>&lt;sqlite3.Cursor object at 0x00000289829E29C0&gt;</code></pre>
+<pre><code>&lt;sqlite3.Cursor object at 0x0000023BD9CE29C0&gt;</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>rows <span class="op">=</span> cursor.fetchall()</span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> row <span class="kw">in</span> rows:</span>
@@ -3355,7 +3355,7 @@ vertical-align: -.125em;
 <span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a><span class="st">);</span></span>
 <span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a><span class="st">&#39;&#39;&#39;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>&lt;sqlite3.Cursor object at 0x00000289829E29C0&gt;</code></pre>
+<pre><code>&lt;sqlite3.Cursor object at 0x0000023BD9CE29C0&gt;</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>cursor.execute(<span class="st">&#39;&#39;&#39;</span></span>
 <span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a><span class="st">INSERT INTO produtos (nome, categoria, preco, estoque) VALUES</span></span>
@@ -3366,7 +3366,7 @@ vertical-align: -.125em;
 <span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a><span class="st">    (&#39;Produto E&#39;, &#39;Categoria 3&#39;, 300.0, 0);</span></span>
 <span id="cb26-8"><a href="#cb26-8" aria-hidden="true" tabindex="-1"></a><span class="st">&#39;&#39;&#39;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>&lt;sqlite3.Cursor object at 0x00000289829E29C0&gt;</code></pre>
+<pre><code>&lt;sqlite3.Cursor object at 0x0000023BD9CE29C0&gt;</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>conn.commit()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
@@ -3377,7 +3377,7 @@ vertical-align: -.125em;
 <div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>prods <span class="op">=</span> pl.read_database(<span class="st">&quot;SELECT * FROM produtos&quot;</span>, conn)</span>
 <span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(prods)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>shape: (10, 5)
+<pre><code>shape: (5, 5)
 ┌─────┬───────────┬─────────────┬───────┬─────────┐
 │ id  ┆ nome      ┆ categoria   ┆ preco ┆ estoque │
 │ --- ┆ ---       ┆ ---         ┆ ---   ┆ ---     │
@@ -3388,11 +3388,6 @@ vertical-align: -.125em;
 │ 3   ┆ Produto C ┆ Categoria 1 ┆ 200.0 ┆ 20      │
 │ 4   ┆ Produto D ┆ Categoria 2 ┆ 250.0 ┆ 10      │
 │ 5   ┆ Produto E ┆ Categoria 3 ┆ 300.0 ┆ 0       │
-│ 6   ┆ Produto A ┆ Categoria 1 ┆ 100.0 ┆ 50      │
-│ 7   ┆ Produto B ┆ Categoria 2 ┆ 150.0 ┆ 30      │
-│ 8   ┆ Produto C ┆ Categoria 1 ┆ 200.0 ┆ 20      │
-│ 9   ┆ Produto D ┆ Categoria 2 ┆ 250.0 ┆ 10      │
-│ 10  ┆ Produto E ┆ Categoria 3 ┆ 300.0 ┆ 0       │
 └─────┴───────────┴─────────────┴───────┴─────────┘</code></pre>
 </div>
 </div>
@@ -3412,21 +3407,16 @@ vertical-align: -.125em;
 <span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a><span class="st">&quot;&quot;&quot;</span>, conn)</span>
 <span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(lucros)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>shape: (10, 4)
+<pre><code>shape: (5, 4)
 ┌───────────┬────────┬───────┬────────┐
 │ produto   ┆ compra ┆ venda ┆ lucro  │
 │ ---       ┆ ---    ┆ ---   ┆ ---    │
 │ str       ┆ f64    ┆ f64   ┆ f64    │
 ╞═══════════╪════════╪═══════╪════════╡
 │ Produto A ┆ 120.5  ┆ 100.0 ┆ -20.5  │
-│ Produto A ┆ 120.5  ┆ 100.0 ┆ -20.5  │
-│ Produto B ┆ 200.0  ┆ 150.0 ┆ -50.0  │
 │ Produto B ┆ 200.0  ┆ 150.0 ┆ -50.0  │
 │ Produto C ┆ 150.0  ┆ 200.0 ┆ 50.0   │
-│ Produto C ┆ 150.0  ┆ 200.0 ┆ 50.0   │
 │ Produto A ┆ 300.0  ┆ 100.0 ┆ -200.0 │
-│ Produto A ┆ 300.0  ┆ 100.0 ┆ -200.0 │
-│ Produto C ┆ 100.0  ┆ 200.0 ┆ 100.0  │
 │ Produto C ┆ 100.0  ┆ 200.0 ┆ 100.0  │
 └───────────┴────────┴───────┴────────┘</code></pre>
 </div>
@@ -3459,13 +3449,26 @@ vertical-align: -.125em;
 </div>
 </div>
 </section>
+<section id="apagando-as-tabelas-existentes-para-não-dar-problema" class="level2">
+<h2 class="anchored" data-anchor-id="apagando-as-tabelas-existentes-para-não-dar-problema">Apagando as tabelas existentes para não dar problema</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>cursor.execute(<span class="st">&quot;DROP TABLE IF EXISTS vendas&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>&lt;sqlite3.Cursor object at 0x0000023BD9CE29C0&gt;</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>cursor.execute(<span class="st">&quot;DROP TABLE IF EXISTS produtos&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>&lt;sqlite3.Cursor object at 0x0000023BD9CE29C0&gt;</code></pre>
+</div>
+</div>
+</section>
 <section id="data-e-hora-do-html" class="level2">
 <h2 class="anchored" data-anchor-id="data-e-hora-do-html">Data e hora do html:</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Salvando a data e o horário em que o html foi gerado</span></span>
-<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a><span class="fu">Sys.time</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Salvando a data e o horário em que o html foi gerado</span></span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a><span class="fu">Sys.time</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] &quot;2025-10-09 10:30:54 -03&quot;</code></pre>
+<pre><code>[1] &quot;2025-10-09 10:51:41 -03&quot;</code></pre>
 </div>
 </div>
 </section>
